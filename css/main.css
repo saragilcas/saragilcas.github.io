@@ -3,6 +3,16 @@ html {
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
+
+
+.button.primary-btn {
+  outline: none;
+  border-color: #4fc1ea;
+  background-color: #4fc1ea;
+  color: #fff;
+  transition: all .5s;
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
