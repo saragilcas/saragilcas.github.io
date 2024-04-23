@@ -1,17 +1,13 @@
----
-import Layout from "../layouts/Default.astro";
-import Navbar from "../components/Navbar.astro";
-import NavbarClone from "../components/NavbarClone.astro";
+import Layout from "/layouts/Default.astro";
+import Navbar from "/components/Navbar.astro";
+import NavbarClone from "/components/NavbarClone.astro";
 const title = "Home";
 ---
 
 <Layout title={title}>
   <section class="hero is-fullheight is-grey">
     <Navbar />
-
-    <NavbarClone />
-
-    <div class="hero-body">
+       <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column is-5 landing-caption">
