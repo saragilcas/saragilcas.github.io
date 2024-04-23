@@ -1,231 +1,540 @@
-<!DOCTYPE html>
-<html>
+import Layout from "/layouts/Default.astro";
+import Navbar from "/components/Navbar.astro";
+import NavbarClone from "/components/NavbarClone.astro";
+const title = "Home";
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>User Extended App</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="lib/main.js"></script>
-</head>
-
-<body>
-  
-  <div class="container is-max-widescreen">
-    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand is-justify-content-space-between" style="width: 100%" >
-        <div class="navbar-item">
-          <img src="img/logo.png" class="logo" alt="User Extended App">
-	 <img src="img/est.png" class="logo" alt="User Extended App">	
-        </div>
-        <div class="navbar-item" >
-          <div class=" is-size-7 is-flex is-justify-content-flex-end pt-1">
-            <a href="#" onclick="changeLanguage('fr')" class="pr-2"> Français </a> |
-            <a href="#" onclick="changeLanguage('es')" class="pl-2 pr-2"> Castellano </a>
+<Layout title={title}>
+  <section class="hero is-fullheight is-grey">
+    <Navbar />
+       <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5 landing-caption">
+            <h1 class="title is-1 is-bold is-spaced">Manage and deploy your apps seamlessly.</h1>
+            <h2 class="subtitle is-5 is-muted">
+              Lorem ipsum sit dolor amet is a dummy text used by typography
+              industry
+            </h2>
+            <div>
+              <a class="button cta primary-btn raised mr-2">
+                Get Started
+              </a>
+              <a class="button cta"> Discover</a>
+            </div>
+          </div>
+          <div class="column is-7">
+            <img src="/img/illustrations/worker.svg" class="hero-image" alt="Description" />
           </div>
         </div>
       </div>
-  </nav>
+    </div>
 
-  <section class="section">
-    <div class="container is-max-widescreen">
-      <div class="columns is-vcentered">
-        <div class="column is-6-desktop has-text-centered">
-          <h3 class="title is-3 has-text-primary"> One app to rule them all</h3>
-          <div class="has-text-centered is-flex" style="justify-content: center;">
-            <a class="button is-primary is-medium is-fullwidth" style="max-width:400px"
-              href="https://apps.dhis2.org/app/1bf66488-93b5-41c8-abfe-1b03b2521a2d"> Download </a>
-          </div>
-         <div class="has-text-centered is-flex" style="justify-content: center; style="max-width:400px"
-          </div>
-
+    <div class="hero-foot mb-20">
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li>
+              <a
+                ><img class="partner-logo" src="/img/logo/clients/systek.svg" />
+              </a>
+            </li>
+            <li>
+              <a
+                ><img class="partner-logo" src="/img/logo/clients/tribe.svg" />
+              </a>
+            </li>
+            <li>
+              <a
+                ><img class="partner-logo" src="/img/logo/clients/kromo.svg" />
+              </a>
+            </li>
+            <li>
+              <a
+                ><img
+                  class="partner-logo"
+                  src="/img/logo/clients/infinite.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                ><img
+                  class="partner-logo"
+                  src="/img/logo/clients/gutwork.svg"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="column is-6-desktop ">
-          <figure class="image">
-            <img src="img/image.png">
-          </figure>
-          <div class="level mt-6">
-            <div class=" level-left">
-             
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">Great Power Comes</h2>
+        <h3 class="subtitle is-5 is-muted">With great Responsability</h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="feature-cards content-wrapper">
+        <div class="columns">
+          <div class="column is-4">
+            <div
+              class="feature-card is-bordered has-text-centered is-feature-reveal"
+            >
+              <div class="card-title">
+                <h4>App builder</h4>
+              </div>
+              <div class="card-icon">
+                <img src="/img/icons/web.svg" />
+              </div>
+              <div class="card-text">
+                <p>This is some cool explanatory text that is on two rows</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="button btn-align-md primary-btn raised"
+                  >Free Trial</a
+                >
+              </div>
             </div>
-            <div class="level-right">
-              <a class="has-text-primary " href="https://github.com/EyeSeeTea/user-extended-app-blessed">
-                <span class="is-size-5"> Source code</span>
-                <span class="icon is-medium" style="vertical-align: middle">
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </a>
+          </div>
+          <div class="column is-4">
+            <div
+              class="feature-card is-bordered has-text-centered is-feature-reveal"
+            >
+              <div class="card-title">
+                <h4>Cloud integration</h4>
+              </div>
+              <div class="card-icon">
+                <img src="/img/icons/rocket.svg" />
+              </div>
+              <div class="card-text">
+                <p>This is some explanatory text that is on two rows</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="button btn-align-md primary-btn raised"
+                  >Get Started</a
+                >
+              </div>
             </div>
-		     <div class="level-right">
-              <a class="has-text-primary " href="https://github.com/EyeSeeTea/user-extended-app-blessed">
-                <span class="is-size-5"> Documentation</span>
-                <span class="icon is-medium" style="vertical-align: middle">
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </a>
+          </div>
+          <div class="column is-4">
+            <div
+              class="feature-card is-bordered has-text-centered is-feature-reveal"
+            >
+              <div class="card-title">
+                <h4>Addons & Plugins</h4>
+              </div>
+              <div class="card-icon">
+                <img src="/img/icons/light-bulb.svg" />
+              </div>
+              <div class="card-text">
+                <p>This is some explanatory text that is on two rows</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="button btn-align-md primary-btn raised"
+                  >Get Started</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section is-medium section-feature-grey">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">Awesome Features</h2>
+        <h3 class="subtitle is-5 is-muted">To make you super happy</h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="columns is-vcentered side-feature mt-60">
+        <div class="column is-4 is-offset-2">
+          <h3 class="title is-3 mb-10 is-title-reveal">Connect with people</h3>
+          <p class="subtitle is-5 is-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
+            audissem Antiochum, Brute, ut solebam, cum M. Quae diligentissime
+            contra Aristonem dicuntur a Chryippo.
+          </p>
+        </div>
+        <div class="column is-5">
+          <img src="/img/illustrations/features/feature-1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="columns is-vcentered side-feature mt-60">
+        <div class="column is-5 is-offset-1">
+          <img src="/img/illustrations/features/feature-2.png" alt="" />
+        </div>
+        <div class="column is-4 is-offset-1">
+          <h3 class="title is-3 mb-10 is-title-reveal">Collaborate easily</h3>
+          <p class="subtitle is-5 is-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
+            audissem Antiochum, Brute, ut solebam, cum M. Quae diligentissime
+            contra Aristonem dicuntur a Chryippo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-feature-grey is-medium">
+    <div class="container">
+      <div class="columns is-vcentered app-side">
+        <div class="column is-4 is-offset-1">
+          <h3 class="title is-3 is-spaced is-title-reveal">An intuitive app</h3>
+          <p class="subtitle is-5 is-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
+            audissem Antiochum, Brute, ut solebam, cum M. Quae diligentissime
+            contra Aristonem dicuntur a Chryippo.
+          </p>
+        </div>
+        <div class="column is-7">
+          <div class="has-text-centered">
+            <img
+              class="side-image"
+              src="/img/illustrations/workers.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">Wait, there's more</h2>
+        <h3 class="subtitle is-5 is-muted">To make you super happy</h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="columns is-multiline icon-list">
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fa6-brands:github"></i>
+              </div>
+              <h4>Github</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fa6-brands:bitbucket"></i>
+              </div>
+              <h4>Bitbucket</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fa6-brands:slack"></i>
+              </div>
+              <h4>Slack</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fa6-brands:npm"></i>
+              </div>
+              <h4>Npm</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fluent:javascript-16-regular"></i>
+              </div>
+              <h4>Javascript</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="fontisto:nodejs"></i>
+              </div>
+              <h4>Nodejs</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="ph:angular-logo"></i>
+              </div>
+              <h4>Angular</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="bi:google"></i>
+              </div>
+              <h4>Google</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="carbon:logo-python"></i>
+              </div>
+              <h4>Python</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="bi:wordpress"></i>
+              </div>
+              <h4>WordPress</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="icon-park-solid:android"></i>
+              </div>
+              <h4>Android</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="feature-icon has-text-centered">
+              <div class="icon-wrap is-icon-reveal">
+                <i class="iconify" data-icon="uiw:apple"></i>
+              </div>
+              <h4>Apple</h4>
+              <p>Some feature text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section is-medium has-background-image"
+    data-background="https://source.unsplash.com/g30P1zcOzXo/1600x900"
+    data-color="#4FC1EA"
+    data-color-opacity=".6"
+  >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2 light-text is-spaced">Our clients love us</h2>
+        <h3 class="subtitle is-5 light-text">Look at what they say about us</h3>
+      </div>
+
+      <div class="testimonials content-wrapper">
+        <div class="columns is-vcentered">
+          <div class="column is-4">
+            <figure class="testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu,
+                hinc minim appetere te usu, ea case duis scribentur has. Duo te
+                consequat elaboraret, has quando suavitate at.
+              </blockquote>
+              <div class="author">
+                <img src="/img/illustrations/faces/1.png" alt="" />
+                <div>
+                    <h5>Irma Walters</h5>
+                    <span>Accountant</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="column is-4">
+            <figure class="testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu,
+                hinc minim appetere te usu, ea case duis scribentur has. Duo te
+                consequat elaboraret, has quando suavitate at.
+              </blockquote>
+              <div class="author">
+                <img src="/img/illustrations/faces/2.png" alt="" />
+                <div>
+                    <h5>John Bradley</h5>
+                    <span>Financial Analyst</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="column is-4">
+            <figure class="testimonial">
+              <blockquote>
+                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu,
+                hinc minim appetere te usu, ea case duis scribentur has. Duo te
+                consequat elaboraret, has quando suavitate at.
+              </blockquote>
+              <div class="author">
+                <img src="/img/illustrations/faces/3.png" alt="" />
+                <div>
+                    <h5>Gary Blackman</h5>
+                    <span>HR Manager</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">Get Started</h2>
+        <h3 class="subtitle is-5 is-muted">Choose one of our plans</h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="pricing-wrap">
+        <div class="feature-card is-pricing has-text-centered">
+          <h3 class="plan-name">Starter</h3>
+          <img src="/img/illustrations/pricing/1.svg" alt="" />
+          <div class="price">0</div>
+          <p>Sign up, get some awesome features and get started now</p>
+          <a class="button is-fullwidth is-bold">Get Started</a>
+        </div>
+        <div class="feature-card is-pricing has-text-centered">
+          <h3 class="plan-name">Pro</h3>
+          <img src="/img/illustrations/pricing/2.svg" alt="" />
+          <div class="price">15</div>
+          <p>Sign up, get some awesome features and get started now</p>
+          <a class="button is-fullwidth primary-btn raised is-bold"
+            >Get Started</a
+          >
+        </div>
+        <div class="feature-card is-pricing has-text-centered">
+          <h3 class="plan-name">Business</h3>
+          <img src="/img/illustrations/pricing/3.svg" alt="" />
+          <div class="price">30</div>
+          <p>Sign up, get some awesome features and get started now</p>
+          <a class="button is-fullwidth is-bold">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light-grey is-medium">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2 is-spaced">Drop us a line or two</h2>
+        <h3 class="subtitle is-5 is-muted">We'd love to hear from You</h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <form>
+              <div class="columns is-multiline">
+                <div class="column is-6">
+                  <input
+                    class="input is-medium"
+                    type="text"
+                    placeholder="First Name *"
+                  />
+                </div>
+                <div class="column is-6">
+                  <input
+                    class="input is-medium"
+                    type="text"
+                    placeholder="Last Name *"
+                  />
+                </div>
+                <div class="column is-6">
+                  <input
+                    class="input is-medium"
+                    type="text"
+                    placeholder="Email *"
+                  />
+                </div>
+                <div class="column is-6">
+                  <input
+                    class="input is-medium"
+                    type="email"
+                    placeholder="Company"
+                  />
+                </div>
+                <div class="column is-12">
+                  <textarea class="textarea" rows="6" placeholder=""></textarea>
+                </div>
+                <div class="column is-12">
+                  <div class="form-footer has-text-right mt-10">
+                    <button
+                      class="button cta is-large primary-btn form-button raised is-clear"
+                      >Send Message</button
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="auth-modal" class="modal">
+    <div class="modal-background modal-dismiss"></div>
+    <div class="modal-content">
+      <div class="flex-card auth-card">
+        <div class="tabs-wrapper">
+          <div class="tabs">
+            <ul>
+              <li class="is-active" data-tab="login-tab"><a>Login</a></li>
+              <li data-tab="register-tab"><a>Register</a></li>
+            </ul>
+          </div>
+          <div id="login-tab" class="tab-content is-active">
+            <div class="field">
+              <label>Username</label>
+              <div class="control">
+                <input
+                  type="text"
+                  class="input is-medium"
+                  placeholder="Enter username"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <div class="control">
+                <input
+                  type="password"
+                  class="input is-medium"
+                  placeholder="Enter password"
+                />
+              </div>
+            </div>
+
+            <a class="button is-fullwidth secondary-btn is-rounded raised"
+              >Log in</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large modal-dismiss" aria-label="close"
+    ></button>
   </div>
-
-  <section class="section" id="features">
-    <div class="container is-max-widescreen">
-      <div class="columns">
-        <div class="column is-4">
-          <h3 class="title is-3 has-text-primary"> Features</h3>
-        </div>
-        <div class="column is-8">
-          <div class="columns is-multiline">
-            <div class="column is-6">
-              <div class="media is-mobile">
-                <div class="media-left">
-                  <span class="icon is-large has-text-primary">
-                    <i class="fas fa-search fa-2x"></i>
-                   </span>
-                </div>
-                <div class="media-content">
-                  <div>
-                    <h5 class="title is-5 has-text-primary pb-0 mb-0">Locate your users</h5>
-                    <p>Use filters to locate your users</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column is-6">
-              <div class="media is-mobile">
-                <div class="media-left">
-                  <span class="icon is-large has-text-primary"><i class="fas fa-users fa-2x"></i></span>
-                </div>
-                <div class="media-content">
-                  <div>
-                    <h5 class="title is-5 has-text-primary pb-0 mb-0">Replicate user into many</h5>
-                    <p>Replicate users using templates</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column is-6">
-              <div class="media is-mobile">
-                <div class="media-left">
-                  <span class="icon is-large has-text-primary"><i class="fas fa-user-edit fa-2x"></i></i> </span>                    
-                </div>
-                <div class="media-content">
-                  <div>
-                    <h5 class="title is-5 has-text-primary pb-0 mb-0">Bulk edition of users</h5>
-                    <p>Edit multiple users at once</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div class="column is-6">
-              <div class="media is-mobile">
-                <div class="media-left">
-                  <span class="icon is-large has-text-primary"><i class="fas fa-file-export fa-2x"></i> </span>
-                </div>
-                <div class="media-content">
-                  <div>
-                    <h4 class="title is-5 has-text-primary pb-0 mb-0">Export/Import</h4>
-                    <p>Export your users in a coma separated file</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  
-  <footer class="footer has-text-centered is-primary">
-    <div class="container is-max-widescreen">
-      <div class="level" style="margin-left: -0.75rem; margin-right: -0.75rem;">
-        <div class="level-left" style="padding: 0.75em 0">
-          <figure class="image" style="padding: 0.75rem;">
-            <img src="img/who.png" style="height:auto; width:225px;" alt="World Health Organization">
-          </figure>
-        </div>
-        <div class="level-item" style="padding: 0.75em 0">
-          <figure class="image" style="position: relative; padding-top: 4%; padding-left: 0.75rem; padding-right: 0.75rem;">
-            <div style="position: absolute; top: 0; left: 21%; color:white; font-size: 15px;">Funded by</div>
-            <img src="img/logo-samaritans.svg" style="height: 45px; width: auto;" alt="Samaritan's Purse">
-          </figure>
-        </div>
-        <div class="level-item" style="padding: 0.75em 0">
-          <figure class="image" style="position: relative; padding-top: 4%; padding-left: 0.75rem; padding-right: 0.75rem;">
-            <div style="position: absolute; top: -8%; left: 32%; color:black; font-size: 15px;">Funded by</div>
-            <img src="img/logo-nrc.svg" style="height: 45px; width: auto;" alt="Norwegian Refugee Council">
-          </figure>
-        </div>
-        <div class="level-right" style="padding: 0.75em 0">
-          <figure class="image" style="padding: 0.75rem;">
-            <img src="img/est.png " style="height:auto; width:200px;" alt="EyeSeeTea">
-          </figure>
-        </div>
-      </div>
-
-      <p>
-        <small>
-          Source code licensed <a style="color:white"
-            href="https://github.com/EyeSeeTea/user-extended-app-blessed/blob/master/LICENSE">
-            GNU General Public License v3.0 </a>
-        </small>
-      </p>
-
-
-<div class="elementor-social-icons-wrapper elementor-grid">
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6e2ee88" href="https://twitter.com/EyeSeeTeaLtd" rel="nofollow">
-						<span class="elementor-screen-only">Twitter</span>
-						<i class="fab fa-twitter"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-9236cfd" href="https://www.linkedin.com/company/eyeseetea-ltd/" rel="nofollow">
-						<span class="elementor-screen-only">Linkedin</span>
-						<i class="fab fa-linkedin"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-github-alt elementor-repeater-item-fe31a7b" href="https://github.com/EyeSeeTea" rel="nofollow">
-						<span class="elementor-screen-only">Github-alt</span>
-						<i class="fab fa-github-alt"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-mastodon elementor-repeater-item-b013ead" href="https://fosstodon.org/@eyeseetea" rel="nofollow">
-						<span class="elementor-screen-only">Mastodon</span>
-						<i class="fab fa-mastodon"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-d2a2694" href="https://www.instagram.com/eyeseetea/" rel="nofollow">
-						<span class="elementor-screen-only">Instagram</span>
-						<i class="fab fa-instagram"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-codepen elementor-repeater-item-f00b851" href="https://community.dhis2.org/u/eyeseetea/summary" target="_blank">
-						<span class="elementor-screen-only">Codepen</span>
-						<i class="fab fa-codepen"></i>					</a>
-				</span>
-					</div>
-      
-
-    </div>
-  </footer>
-  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-<!-- Matomo --><script>
-var _paq = window._paq = window._paq || [];
-_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);_paq.push(['alwaysUseSendBeacon']);_paq.push(['setTrackerUrl', "\/\/eyeseetea.com\/wp-content\/plugins\/matomo\/app\/matomo.php"]);_paq.push(['setSiteId', '1']);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.src="\/\/eyeseetea.com\/wp-content\/uploads\/matomo\/matomo.js"; s.parentNode.insertBefore(g,s);
-</script>
-<!-- End Matomo Code -->
-  
-
-</body>
-
-</html>
+</Layout>
